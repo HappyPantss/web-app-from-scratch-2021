@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --primary: #FA9C1D;
+    --secondary: #ebaa56;
+    --logo2: #FFFFFF;
+    --logo3: #4A4C4E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--primary);
+}
+
+
+/* card */
+
+.profile {
+    font-family: 'Roboto', sans-serif;
+    background: red;
+}
+
+.stats {
+    font-family: 'Roboto', sans-serif;
+    background: green;
+}
+
+
+/* IMAGE */
+
+img {
+    height: 16rem;
+    width: 16rem;
+}
