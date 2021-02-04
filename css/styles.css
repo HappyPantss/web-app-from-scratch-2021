@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
-    --primary: #FA9C1D;
-    --secondary: #ebaa56;
+    --primary: #DD9E01;
+    --secondary: #FFD023;
     --logo2: #FFFFFF;
     --logo3: #4A4C4E;
 }
@@ -15,26 +15,62 @@
 
 body {
     min-height: 100vh;
-    background: var(--primary);
+    background: linear-gradient(to bottom, var(--secondary), var(--primary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
-/* card */
-
-.profile {
-    font-family: 'Roboto', sans-serif;
-    background: red;
-}
-
-.stats {
-    font-family: 'Roboto', sans-serif;
-    background: green;
-}
-
-
-/* IMAGE */
 
 img {
-    height: 16rem;
-    width: 16rem;
+    position: relative;
+}
+
+div {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.profile>span:first-of-type {
+    position: absolute;
+    background: rgba(36, 45, 68, .6);
+    padding: .2rem;
+    color: #00aeee;
+    font-size: 1.3rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: ". . ." "profile quick comp" ". . .";
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.profile {
+    grid-area: profile;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    border: none;
+}
+
+.quick {
+    grid-area: quick;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    border: none;
+}
+
+.comp {
+    grid-area: comp;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    border: none;
 }
