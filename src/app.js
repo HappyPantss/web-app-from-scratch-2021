@@ -1,54 +1,22 @@
-async function getStats() {
-    const response = await fetch(`https://ovrstat.com/stats/pc/Sergini-21678`)
-    const data = await response.json()
+import { fetchData } from './modules/api.js'
 
-    console.log(data)
-    return data
-}
-
-// Only show top 3 heroes WIP !!!
-function timePlayedStringToDateObject(hero) {
-    let timePlayedOfHeroToDate = new Date()
-    let [hours, minutes, seconds] = hero.timePlayed.split(':')
-    return timePlayedOfHeroToDate
-}
-
-function getPlaytimesOfTop3HeroesWithHighestPlaytime(topHeroes) {
-
-    let top3HeroesWithHighestPlaytime = []
-
-    for (const heroProperty in topHeroes) {
-        if (top3HeroesWithHighestPlaytime.length <= 0) {
-            top3HeroesWithHighestPlaytime.push(topHeroes[heroProperty])
-            continue
-        } else {
-            top3HeroesWithHighestPlaytime.find(hero => {
-                // console.log(timePlayedOfHeroToDate)
-                if (timePlayedStringToDateObject(hero) < timePlayedStringToDateObject(topHeroes[heroProperty])) {
-                    top3HeroesWithHighestPlaytime.push(topHeroes[heroProperty])
-                }
-            })
-        }
-        console.log(top3HeroesWithHighestPlaytime)
-            // console.log(topHeroes[heroProperty].timePlayed)
-    }
-}
-// ----------------------------------
+console.log(fetchData.data)
 
 async function main() {
-    const info = await getStats()
-    const userProfile = document.querySelector('.profile')
+    const info = await fetchData()
+    const userProfile = document.querySelector('.profileStats')
+    const quickStats = document.querySelector('.quick')
+    const compStats = document.querySelector('.comp')
 
     const profileElement =
         `<img id="icon" src="${info.icon}">
         <span>${info.prestige}${info.level}</span>
-        <span>${info.name}</span>
+        <span>${info.name.split('#')[0]}</span>
         <span>Games won: ${info.gamesWon}</span>
         <span>Endorsement: ${info.endorsement}</span>`
 
     userProfile.insertAdjacentHTML('beforeend', profileElement)
 
-    const quickStats = document.querySelector('.quick')
     const quickInfo = info.competitiveStats.careerStats.allHeroes.game;
     const quickElement =
         `<h1>Algemene game statistieken van huidig competitief seizoen van alle heroes:</h1>
@@ -60,7 +28,6 @@ async function main() {
 
     quickStats.insertAdjacentHTML('beforeend', quickElement)
 
-    const compStats = document.querySelector('.comp')
     const compInfo = info.competitiveStats.careerStats.allHeroes.game;
     const compElement =
         `<h1>Algemene game statistieken van huidig competitief seizoen van alle heroes:</h1>
@@ -73,7 +40,7 @@ async function main() {
     compStats.insertAdjacentHTML('beforeend', compElement)
 
     // const topHeroes = info.quickPlayStats.topHeroes
-    // getPlaytimesOfTop3HeroesWithHighestPlaytime(topHeroes)
+    // getPlayTime(topHeroes)
 
     // const playTime = info.quickPlayStats.topHeroes["reinhardt"].timePlayed
     // console.log(playTime)
