@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Hammersmith+One&family=Oswald:wght@200;400&display=swap"');
 :root {
     --primary: #DD9E01;
     --secondary: #FFD023;
@@ -27,6 +27,9 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 .hero {
@@ -48,4 +51,55 @@ html {
     top: 50%;
     transform: translate(0, -50%);
     color: white;
+}
+
+.container {
+    min-height: 100vh;
+    background-image: url("../img/gib.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 40%;
+    background: #f1f1f1;
+}
+
+form input:nth-child(2) {
+    width: 30%;
+}
+
+form button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #ff9c00;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-left: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0b7dda;
+}
+
+form::after {
+    content: "";
+    clear: both;
+    display: table;
 }
