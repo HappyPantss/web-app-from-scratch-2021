@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Hammersmith+One&family=Oswald:wght@200;400&display=swap"');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Hammersmith+One&family=Oswald:wght@200;400&display=swap"');
 :root {
     --primary: #DD9E01;
     --secondary: #FFD023;
@@ -29,6 +29,8 @@ html {
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
     font-size: 2rem;
 }
 
@@ -36,14 +38,13 @@ html {
     background-image: url("../img/career-portrait.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-position: bottom;
     position: absolute;
     top: 0;
     bottom: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 70%;
-    background-position: bottom;
 }
 
 .profileStats {
@@ -51,6 +52,34 @@ html {
     top: 50%;
     transform: translate(0, -50%);
     color: white;
+}
+
+.competitiveStats {
+    margin: 0 auto;
+    width: 70%;
+}
+
+div:nth-child(2) {
+    background: url(https://static.playoverwatch.com/img/crystal-candy-bg-top-e64823cff8.jpg) no-repeat top, url(https://static.playoverwatch.com/img/crystal-candy-bg-bottom-00cdaf6844.jpg) no-repeat bottom;
+    background-color: #f6e9f0;
+    color: #333333;
+    display: flex;
+}
+
+div:nth-child(2) article {
+    background: url(https://static.playoverwatch.com/img/hero-portrait-detailed/hero-portrait-detailed-bg-c659e0b7f6.jpg) no-repeat;
+    text-transform: uppercase;
+    font-family: 'Ranchers', cursive;
+    margin: .3rem .3rem;
+    float: left;
+    width: 180px;
+}
+
+div:nth-child(2) article h2 {
+    color: #d0d0dc;
+    letter-spacing: 2px;
+    text-align: center;
+    background: rgba(40, 53, 79, .9);
 }
 
 .container {

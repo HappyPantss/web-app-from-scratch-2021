@@ -1,4 +1,4 @@
-import { fetchData } from './api.js'
+import { fetchData } from '../api/api.js'
 
 export async function cleanData() {
     const info = await fetchData()
