@@ -2,7 +2,7 @@
 // import { overview } from '../render/overview.js'
 // import { detail } from '../render/details.js'
 
-export function handleRoutes() {
+export default function handleRoutes() {
     // routie('', overview)
     // routie('overview', overview)
     // routie('game/:id', detail)

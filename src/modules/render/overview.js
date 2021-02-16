@@ -25,7 +25,7 @@ export async function overview() {
         `<a href="/:name">
             <article>
                 <h2>${hero.name}</h2>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/${hero.name}/hero-select-portrait.png">
+                <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/${hero.name.toLowerCase()}/hero-select-portrait.png">
                 <h2>Tijd: ${hero.timePlayed}</h2>
             </article>
         </a>`
