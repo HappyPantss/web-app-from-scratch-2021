@@ -35,7 +35,7 @@ html {
 }
 
 .hero {
-    background-image: url("../img/career-portrait.png");
+    background-image: url(https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/career-portrait.png);
     background-repeat: no-repeat;
     background-position: center;
     background-position: bottom;
@@ -131,4 +131,8 @@ form::after {
     content: "";
     clear: both;
     display: table;
+}
+
+.hide {
+    display: none;
 }

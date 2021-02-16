@@ -1,18 +1,33 @@
 import { fetchData } from '../api/api.js'
 import { cleanData } from '../components/cleanData.js'
 
-export async function detail() {
+export async function renderDetail(name) {
     const info = await fetchData()
     const topHeroArray = await cleanData()
-    const userProfile = document.querySelector('.profileStats')
+    const heroDetail = document.querySelector('.heroDetail')
+    heroDetail.innerHTML = ''
     const heroSection = document.querySelector('.heroSection')
-    const heroPortrait = '../public/img/portraits/'
+    heroSection.classList.add('hide')
+    heroSection.innerHTML = ''
 
-    console.log(info)
+    const hero = topHeroArray.find(hero => (
+        hero.name.toLowerCase() === name.toLowerCase()
+    ))
+
+    document.querySelector('.hero').style.backgroundImage = `url(https://d1u1mce87gyfbn.cloudfront.net/hero/${hero.name.toLowerCase()}/career-portrait.png)`;
+
+    console.log(hero)
 
     const profileElement =
-        `<h1>${hero.name}</h1>`
+        `<h1>${hero.name}</h1>
+        <p>timePlayed: ${hero.timePlayed}</p>
+        <p>eliminationsPerLife: ${hero.eliminationsPerLife}</p>
+        <p>gamesWon: ${hero.gamesWon}</p>
+        <p>multiKillBest: ${hero.multiKillBest}</p>
+        <p>objectiveKills: ${hero.objectiveKills}</p>
+        <p>weaponAccuracy: ${hero.weaponAccuracy}</p>
+        <p>winPercentage: ${hero.winPercentage}</p>`
 
-    userProfile.insertAdjacentHTML('beforeend', profileElement)
+    heroDetail.insertAdjacentHTML('beforeend', profileElement)
 
 }
