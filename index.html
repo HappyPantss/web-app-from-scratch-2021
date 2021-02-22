@@ -33,8 +33,17 @@
             <p id="demo"></p>
         </div>
     </div> -->
+    <div class="loader">
+        <img src="public/img/loader.svg" alt="Loading...">
+    </div>
 
     <script src="src/lib/routie.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+        })
+    </script>
 </body>
 
 </html>

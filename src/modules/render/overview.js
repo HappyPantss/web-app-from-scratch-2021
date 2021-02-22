@@ -1,5 +1,7 @@
 import { fetchData } from '../api/api.js'
 import { cleanData } from '../components/cleanData.js'
+// import { cleanNames } from '../components/cleanNames.js'
+
 
 export async function overview() {
     const info = await fetchData()
@@ -28,7 +30,7 @@ export async function overview() {
     userProfile.insertAdjacentHTML('beforeend', profileElement)
 
     const heroList = topHeroArray.map(hero => (
-        `<a href="#hero/${hero.name.toLowerCase()}">
+        `<a href="#hero/${hero.name}">
             <article>
                 <h2>${hero.name}</h2>
                 <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/${hero.name.toLowerCase()}/hero-select-portrait.png">
