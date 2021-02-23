@@ -18,7 +18,7 @@
 This is the repository for frontend-applications CMD 2020/2021.
 Live version: https://happypantss.github.io/web-app-from-scratch-2021/
 
-# Concept
+# 💬 Concept
 The idea of this website is that you can search for your account, and see some basic statistics from your Overwatch account. You can find your personal information like level, games won etc. And you can find some statistics about your heroes you played last season of competitive. Disclaimer: You have to play Overwatch to see your stats.
 
 # 🚀 Installation
@@ -31,10 +31,10 @@ Install a live server extension for your code editor. I use the extension 'Live 
 **Visit the local website in your browser with:**<br>
 Start the server and go to `http://127.0.0.1:5500`
 
-# Features
+# 🔨 Features
 You can see all your heroes you played this season. If you click on a specific hero, you can see the detail statistics.
 
-# External Data Source
+# 📈 External Data Source
 The API I use is from [Ovrstat](https://ovrstat.com/). The overstat API is an unofficial Overwatch Stats API written in Go. Accesing its main API endpoint is extremely simple. 
 
 ```Javascript
@@ -43,16 +43,16 @@ https://ovrstat.com/{platform}/{username} // For example: /pc/Sergini-21678
 
 Response: https://ovrstat.com/stats/pc/Sergini-21678
 
-# Diagrams
+# 📖 Diagrams
 ## Actor Diagram
 ![Actor Diagram](https://i.imgur.com/qzb1EwL.png)
 
 ## Interaction Diagram
 ![Interaction Diagram](https://i.imgur.com/DlOTQMb.png)
 
-# ✅ Done stuff
+<!-- # ✅ Done stuff -->
 
-# Wishlist
+<!-- # 🌟 Wishlist -->
 
 # 📘 License
 This project is released under the under terms of the MIT License.
