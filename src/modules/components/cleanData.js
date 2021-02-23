@@ -18,7 +18,6 @@ export async function cleanData() {
     }
 
     // console.log(topHeroArray.map(a => a.name))
-
     return topHeroArray
 }
 
