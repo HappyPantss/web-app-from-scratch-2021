@@ -14,14 +14,14 @@
 * [Wishlist]()
 * [Extra]()
 
-# Live version
+# 🌍 Live version 
 This is the repository for frontend-applications CMD 2020/2021.
 Live version: https://happypantss.github.io/web-app-from-scratch-2021/
 
 # Concept
 The idea of this website is that you can search for your account, and see some basic statistics from your Overwatch account. You can find your personal information like level, games won etc. And you can find some statistics about your heroes you played last season of competitive. Disclaimer: You have to play Overwatch to see your stats.
 
-# Installation
+# 🚀 Installation
 **Clone the repository:**<br>
 `https://github.com/HappyPantss/web-app-from-scratch-2021.git`
 
@@ -50,15 +50,14 @@ Response: https://ovrstat.com/stats/pc/Sergini-21678
 ## Interaction Diagram
 ![Interaction Diagram](https://i.imgur.com/DlOTQMb.png)
 
-<!-- # Done stuff
+# ✅ Done stuff
 
 # Wishlist
 
-# License -->
+# 📘 License
+This project is released under the under terms of the MIT License.
 
-# Extra
+# ❤️ Extra
 ## With help from:
 [Oussama Fahchouch - ofahchouch-gh](https://github.com/ofahchouch-gh)<br>
 [Wouter van der Heijden - Mokerstier](https://github.com/Mokerstier)<br>
-
-# 
