@@ -33,7 +33,7 @@ export async function overview() {
         `<a href="#hero/${hero.name}">
             <article>
                 <h2>${hero.name}</h2>
-                <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/${hero.name.replace(/([A-Z])/g, '-$1').replace(/(\d+)/g, '-$1').trim().toLowerCase()}/hero-select-portrait.png">
+                <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/${hero.name.replace(/([A-B])/g, '-$1').replace(/(\d+)/g, '-$1').toLowerCase()}/hero-select-portrait.png">
             </article>
         </a>`
     )).join(' ')

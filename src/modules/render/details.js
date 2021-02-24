@@ -14,7 +14,7 @@ export async function renderDetail(name) {
         hero.name.toLowerCase() === name.toLowerCase()
     ))
 
-    document.querySelector('.hero').style.backgroundImage = `url(https://d1u1mce87gyfbn.cloudfront.net/hero/${hero.name.toLowerCase()}/career-portrait.png)`;
+    document.querySelector('.hero').style.backgroundImage = `url(https://d1u1mce87gyfbn.cloudfront.net/hero/${hero.name.replace(/([A-B])/g, '-$1').replace(/(\d+)/g, '-$1').toLowerCase()}/career-portrait.png)`;
 
     console.log(hero)
 

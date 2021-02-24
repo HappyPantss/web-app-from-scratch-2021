@@ -1,5 +1,5 @@
 export async function fetchData() {
-    const response = await fetch(`https://ovrstat.com/stats/pc/Midnan-2237`)
+    const response = await fetch(`https://ovrstat.com/stats/pc/Sergini-21678`)
     const data = await response.json()
 
     return data
