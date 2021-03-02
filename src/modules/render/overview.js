@@ -1,7 +1,5 @@
 import { fetchData } from '../api/api.js'
 import { cleanData } from '../components/cleanData.js'
-// import { cleanNames } from '../components/cleanNames.js'
-
 
 export async function overview() {
     const info = await fetchData()
@@ -13,8 +11,6 @@ export async function overview() {
     const heroSection = document.querySelector('.heroSection')
     heroSection.innerHTML = ''
     heroSection.classList.remove('hide')
-
-    console.log(info)
 
     document.querySelector('.hero').style.backgroundImage = `url(https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/career-portrait.png)`;
 
@@ -29,17 +25,17 @@ export async function overview() {
 
     userProfile.insertAdjacentHTML('beforeend', profileElement)
 
-    const heroList = topHeroArray.map(hero => (
-        `<a href="#hero/${hero.name}">
+
+    let sortedArray = topHeroArray.sort((item1, item2) => item2.gamesWon - item1.gamesWon) // Sort on total games won
+
+    const heroList = sortedArray.map(hero => ( // 
+            `<a href="#hero/${hero.name}">
             <article>
                 <h2>${hero.name}</h2>
                 <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/${hero.name.replace(/([A-B])/g, '-$1').replace(/(\d+)/g, '-$1').toLowerCase()}/hero-select-portrait.png">
             </article>
         </a>`
-    )).join(' ')
+        )).join(' ') // Delete all whitespaces and ,
 
     heroSection.insertAdjacentHTML('beforeend', heroList)
-
-    // /(\d+)/g
-    // /([A-Z])/g
 }
