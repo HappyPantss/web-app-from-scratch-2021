@@ -1,8 +1,6 @@
 # Web App From Scratch 2021
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
-![Overview Page](https://i.imgur.com/4Ww4IpY.png)
+![Overview Page](https://i.imgur.com/xooR5QP.png)
 
-<!-- Maybe a table of contents here? 📚 -->
 # Table of Contents
 * [Live version]()
 * [Concept]()
@@ -45,14 +43,10 @@ Response: https://ovrstat.com/stats/pc/Sergini-21678
 
 # 📖 Diagrams
 ## Actor Diagram
-![Actor Diagram](https://i.imgur.com/qzb1EwL.png)
+![Actor Diagram](https://i.imgur.com/q1AoQhD.png)
 
 ## Interaction Diagram
-![Interaction Diagram](https://i.imgur.com/DlOTQMb.png)
-
-<!-- # ✅ Done stuff -->
-
-<!-- # 🌟 Wishlist -->
+![Interaction Diagram](https://i.imgur.com/nrct4Mr.png)
 
 # 📘 License
 This project is released under the under terms of the MIT License.
@@ -61,3 +55,4 @@ This project is released under the under terms of the MIT License.
 ## With help from:
 [Oussama Fahchouch - ofahchouch-gh](https://github.com/ofahchouch-gh)<br>
 [Wouter van der Heijden - Mokerstier](https://github.com/Mokerstier)<br>
+[Loc Nguyen - LaupWing](https://github.com/LaupWing)<br>
