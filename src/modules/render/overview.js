@@ -12,8 +12,6 @@ export async function overview() {
     heroSection.innerHTML = ''
     heroSection.classList.remove('hide')
 
-    document.querySelector('.hero').style.backgroundImage = `url(https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/career-portrait.png)`;
-
     const profileElement =
         `<article>
             <img id="icon" src="${info.icon}">
@@ -27,6 +25,8 @@ export async function overview() {
 
 
     let sortedArray = topHeroArray.sort((item1, item2) => item2.gamesWon - item1.gamesWon) // Sort on total games won
+
+    document.querySelector('.hero').style.backgroundImage = `url(https://d1u1mce87gyfbn.cloudfront.net/hero/` + sortedArray[0].name + `/career-portrait.png)`;
 
     const heroList = sortedArray.map(hero => ( // 
             `<a href="#hero/${hero.name}">

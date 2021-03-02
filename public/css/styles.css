@@ -36,7 +36,7 @@ html {
 }
 
 .hero {
-    background-image: url(https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/career-portrait.png);
+    /* background-image: url(https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/career-portrait.png); */
     background-repeat: no-repeat;
     background-position: center;
     background-position: bottom;
@@ -69,6 +69,8 @@ div:nth-child(2) {
 
 div:nth-child(2) article {
     background: url(https://static.playoverwatch.com/img/hero-portrait-detailed/hero-portrait-detailed-bg-c659e0b7f6.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
     text-transform: uppercase;
     font-family: 'Ranchers', cursive;
     margin: .3rem .3rem;

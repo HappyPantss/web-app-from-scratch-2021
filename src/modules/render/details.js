@@ -1,8 +1,6 @@
-import { fetchData } from '../api/api.js'
 import { cleanData } from '../components/cleanData.js'
 
 export async function renderDetail(name) {
-    const info = await fetchData()
     const topHeroArray = await cleanData()
     const heroDetail = document.querySelector('.heroDetail')
     heroDetail.innerHTML = ''
