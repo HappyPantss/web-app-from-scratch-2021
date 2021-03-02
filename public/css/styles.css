@@ -36,7 +36,6 @@ html {
 }
 
 .hero {
-    /* background-image: url(https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/career-portrait.png); */
     background-repeat: no-repeat;
     background-position: center;
     background-position: bottom;
@@ -60,8 +59,10 @@ html {
     width: 70%;
 }
 
-div:nth-child(2) {
-    background: url(https://static.playoverwatch.com/img/crystal-candy-bg-top-e64823cff8.jpg) no-repeat top, url(https://static.playoverwatch.com/img/crystal-candy-bg-bottom-00cdaf6844.jpg) no-repeat bottom;
+div:nth-of-type(2) {
+    background: url(https://static.playoverwatch.com/img/crystal-candy-bg-top-e64823cff8.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
     background-color: #f6e9f0;
     color: #333333;
     display: flex;
@@ -101,16 +102,21 @@ div:nth-child(2) article h2 {
     flex-wrap: wrap;
 }
 
-form input[type=text] {
+form input[type=text],
+select {
     padding: 10px;
-    font-size: 17px;
+    font-size: 15px;
     border: none;
+    height: 40px;
     float: left;
-    width: 40%;
     background: #f1f1f1;
 }
 
-form input:nth-child(2) {
+form input:first-child {
+    width: 50%;
+}
+
+select {
     width: 30%;
 }
 
