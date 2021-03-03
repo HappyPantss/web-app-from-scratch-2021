@@ -21,6 +21,40 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+form input[type=text],
+select {
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    height: 40px;
+    float: left;
+    background: #f1f1f1;
+}
+
+form input:first-child {
+    width: 50%;
+}
+
+select {
+    width: 30%;
+}
+
+form button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #ff9c00;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-left: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0b7dda;
+}
+
 .overview {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/gib.jpg");
     height: 50%;
@@ -86,60 +120,19 @@ div:nth-child(2) article h2 {
     background: rgba(40, 53, 79, .9);
 }
 
-.container {
-    min-height: 100vh;
-    background-image: url("../img/gib.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.heroDetail>h1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--secondary);
 }
 
-.card {
-    display: flex;
-    flex-wrap: wrap;
+.heroDetail>p {
+    padding: 10px 10px 10px 0;
+    font-size: 1.3rem;
 }
 
-form input[type=text],
-select {
-    padding: 10px;
-    font-size: 15px;
-    border: none;
-    height: 40px;
-    float: left;
-    background: #f1f1f1;
-}
-
-form input:first-child {
-    width: 50%;
-}
-
-select {
-    width: 30%;
-}
-
-form button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #ff9c00;
-    color: white;
-    font-size: 17px;
-    border: none;
-    border-left: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #0b7dda;
-}
-
-form::after {
-    content: "";
-    clear: both;
-    display: table;
+.heroDetail>p>span {
+    color: var(--primary);
 }
 
 .hide {

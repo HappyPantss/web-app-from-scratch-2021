@@ -2,15 +2,14 @@
 ![Overview Page](https://i.imgur.com/xooR5QP.png)
 
 # Table of Contents
-* [Live version]()
-* [Concept]()
-* [Installation]()
-* [Features]()
-* [External Data Source]()
-* [Diagrams]()
-* [Done stuff]()
-* [Wishlist]()
-* [Extra]()
+* [Live version](https://github.com/HappyPantss/web-app-from-scratch-2021#-live-version)
+* [Concept](https://github.com/HappyPantss/web-app-from-scratch-2021#-concept)
+* [Installation](https://github.com/HappyPantss/web-app-from-scratch-2021#-installation)
+* [Features](https://github.com/HappyPantss/web-app-from-scratch-2021#-features)
+* [External Data Source](https://github.com/HappyPantss/web-app-from-scratch-2021#-external-data-source)
+* [Diagrams](https://github.com/HappyPantss/web-app-from-scratch-2021#-diagrams)
+* [License](https://github.com/HappyPantss/web-app-from-scratch-2021#-diagrams)
+* [Extra](https://github.com/HappyPantss/web-app-from-scratch-2021#%EF%B8%8F-extra)
 
 # 🌍 Live version 
 This is the repository for frontend-applications CMD 2020/2021.

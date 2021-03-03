@@ -16,13 +16,13 @@ export async function renderDetail(name) {
 
     const profileElement =
         `<h1>${hero.name}</h1>
-        <p>timePlayed: ${hero.timePlayed}</p>
-        <p>eliminationsPerLife: ${hero.eliminationsPerLife}</p>
-        <p>gamesWon: ${hero.gamesWon}</p>
-        <p>multiKillBest: ${hero.multiKillBest}</p>
-        <p>objectiveKills: ${hero.objectiveKills}</p>
-        <p>weaponAccuracy: ${hero.weaponAccuracy}</p>
-        <p>winPercentage: ${hero.winPercentage}</p>`
+        <p>Games won: <span>${hero.gamesWon}</span></p>
+        <p>Time played: <span>${hero.timePlayed}</span></p>
+        <p>Eliminations per life: <span>${hero.eliminationsPerLife}</span></p>
+        <p>Best multikill: <span>${hero.multiKillBest}</span></p>
+        <p>Objective kills: <span>${hero.objectiveKills}</span></p>
+        <p>Weapon accuracy: <span>${hero.weaponAccuracy}</span></p>
+        <p>Win percentage: <span>${hero.winPercentage}</span></p>`
 
     heroDetail.insertAdjacentHTML('beforeend', profileElement)
 

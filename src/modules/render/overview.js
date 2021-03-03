@@ -23,7 +23,6 @@ export async function overview() {
 
     userProfile.insertAdjacentHTML('beforeend', profileElement)
 
-
     let sortedArray = topHeroArray.sort((item1, item2) => item2.gamesWon - item1.gamesWon) // Sort on total games won
 
     document.querySelector('.hero').style.backgroundImage = `url(https://d1u1mce87gyfbn.cloudfront.net/hero/` + sortedArray[0].name + `/career-portrait.png)`;
